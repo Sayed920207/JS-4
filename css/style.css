@@ -1,0 +1,25 @@
+body{
+    background-color: #f7ecde;
+}
+.contanier hr{
+    border:3px dashed #352e28 ;
+}
+.text-green{
+    color: #40a55b;
+}
+.text-gren{
+   background-color: #40a55b !important;
+}
+.text-brown{
+    background-color: #d1512d !important;
+
+}
+.text-brrown{
+    color: #d1512dd8 !important;
+
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: bold;
+    font-size: 4rem !important;
+}

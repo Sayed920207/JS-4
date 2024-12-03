@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="mt-5">Bookmarker</h1>
+      <hr class="mt-5" />
+      <div class="d-flex justify-content-center text-brrown">
+        <i class="mt-3 me-2 fs-4 fa-solid fa-bookmark"></i>
+        <h2>Bookmark your favorite sites</h2>
+        <i class="mt-3 ms-3 fs-4 fa-solid fa-bookmark"></i>
+      </div>
+      <label class="fw-bold fs-2 mt-5" for="siteName">Site Name :</label> 
+      
+      <input  oninput="validateForm(this)" id="siteName" class="w-50 p-2 rounded-4"  type="text" placeholder="Book Mark Name"/>
+       <br>
+      <label class="fw-bold fs-2 mt-3" for="siteURL">SitE URL  : </label>
+      <input id="siteURL" oninput="validateForm(this)"class="w-50 p-2 rounded-4" type="text" placeholder="Web Site URL"/>
+      <br/>
+      <button
+        class="fs-4 btn rounded-4 mt-3 text-white py-1 px-3 text-brown"
+        type="submit"
+        onclick="add()"
+      >
+        Submit
+      </button>
+      <hr class="mt-4" />
+      <table class="w-75 rounded-4 m-auto bg-info">
+        <thead>
+          <tr>
+            <th class="p-1">Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="table"></tbody>
+      </table>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
